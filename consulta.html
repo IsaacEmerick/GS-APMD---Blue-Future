@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta de Viagens</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark/dark.min.css">  
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="./assets/js/script.js" defer></script>
+</head>
+<body class="flex flex-col min-h-screen bg-gray-100">
+    <header id="header" class="bg-gray-800 text-white p-4"></header>
+  
+    <main class="flex-grow flex flex-col items-center justify-center px-4">
+        <div class="max-w-2xl mt-8 mb-8 text-center">
+            <h2 class="text-2xl font-bold text-gray-800 mb-4">Consulta de Viagens</h2>
+            <p class="text-gray-700">
+                Utilize o campo abaixo para buscar e visualizar as viagens registradas. Você pode filtrar os resultados digitando a data, porto de embarque, porto de desembarque ou a quantidade de lixo coletado.
+            </p>
+        </div>
+        <div class="w-full max-w-6xl mb-8">
+            <div class="mb-4">
+                <input type="text" id="search" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="Buscar viagens...">
+            </div>
+            <div id="viagens-list" class="grid grid-cols-1 md:grid-cols-2 gap-4 bg-white p-6 rounded-lg shadow-md"></div>
+        </div>
+    </main>
+  
+    <footer id="footer" class="bg-gray-800 text-white p-4 text-center"></footer>
+</body>
+</html>

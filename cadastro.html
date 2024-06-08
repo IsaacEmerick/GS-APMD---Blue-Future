@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Viagem</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark/dark.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="./assets/js/script.js" defer></script>
+</head>
+<body>
+    <body class="flex flex-col min-h-screen bg-gray-100">
+        <header id="header" class="bg-gray-800 text-white p-4"></header>
+      
+        <main class="flex-grow flex flex-col items-center justify-center px-4">
+            <div class="max-w-2xl mb-8 text-center">
+                <h2 class="text-2xl font-bold text-gray-800 mb-4">Cadastro de Viagem</h2>
+                <p class="text-gray-700">
+                    Preencha o formulário abaixo para registrar uma nova viagem. Certifique-se de que todos os campos estão preenchidos corretamente para mantermos um registro preciso das operações de coleta de microplásticos.
+                </p>
+            </div>
+            <form id="cadastro-form" class="bg-white p-6 rounded-lg shadow-md w-full max-w-2xl">
+                <div class="mb-4">
+                    <label for="data" class="block text-gray-700 font-bold mb-2">Data:</label>
+                    <input type="date" id="data" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                </div>
+                <div class="mb-4">
+                    <label for="embarque" class="block text-gray-700 font-bold mb-2">Porto de Embarque:</label>
+                    <input type="text" id="embarque" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                </div>
+                <div class="mb-4">
+                    <label for="desembarque" class="block text-gray-700 font-bold mb-2">Porto de Desembarque:</label>
+                    <input type="text" id="desembarque" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                </div>
+                <div class="mb-4">
+                    <label for="lixo-coletado" class="block text-gray-700 font-bold mb-2">Quantidade de Lixo Coletado (kg):</label>
+                    <input type="number" id="lixo-coletado" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                </div>
+                <div class="flex items-center justify-between">
+                    <button type="submit" class="px-4 py-1 text-sky-900 font-semibold rounded-full border border-sky-900 hover:text-white hover:bg-sky-900 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-sky-700 focus:ring-offset-2">
+                    Cadastrar
+                    </button>
+                </div>
+            </form>
+        </main>
+      
+        <footer id="footer" class="bg-gray-800 text-white p-4 text-center"></footer>
+</body>
+</html>

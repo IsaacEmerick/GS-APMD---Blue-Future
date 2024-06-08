@@ -5,8 +5,105 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blue Future</title>
     <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark/dark.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="./assets/js/script.js" defer></script>
 </head>
-<body>
-    
+<body class="bg-gray-100">
+
+    <header id="header" class="bg-gray-800 text-white p-4"></header>
+
+    <section class="bg-sky-800 py-20">
+        <div class="container mx-auto text-center px-4 sm:px-6 lg:px-8">
+            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-200 mb-4">
+                Desenvolvendo Soluções Inovadoras: <br> Rumo a Oceanos Livres de Microplásticos
+            </h1>
+            <p class="text-lg sm:text-xl lg:text-2xl text-gray-200 mb-8">
+                Ajudando a preservar a biodiversidade marinha e a saúde dos ecossistemas costeiros através de tecnologia avançada e inovação.
+            </p>
+            <a href="#sobre" id="saiba-mais-button" class="px-4 py-1 text-gray-200 font-semibold rounded-full border border-gray-200 hover:text-white hover:bg-gray-900 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-gray-700 focus:ring-offset-2">
+                Saiba Mais
+            </a>
+        </div>
+    </section>
+
+    <section class="py-12 bg-gray-light" id="sobre">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">
+            Sobre o Projeto
+        </h2>
+        <div class="flex flex-wrap -mx-4">
+            <div class="w-full lg:w-1/2 px-4 mb-6">
+            <div class="bg-white shadow-md rounded p-6 h-full">
+                <h3 class="text-xl font-bold text-gray-800 mb-4">Nossa Missão</h3>
+                <p class="text-gray-700">
+                O projeto Oceano Limpo tem como objetivo desenvolver uma embarcação autônoma capaz de identificar, coletar e processar microplásticos nos oceanos, contribuindo para a preservação da biodiversidade marinha e para a saúde dos ecossistemas costeiros.
+                </p>
+            </div>
+            </div>
+            <div class="w-full lg:w-1/2 px-4 mb-6">
+            <div class="bg-white shadow-md rounded p-6 h-full">
+                <h3 class="text-xl font-bold text-gray-800 mb-4">Tecnologia de Ponta</h3>
+                <p class="text-gray-700">
+                Utilizamos sensores avançados para detecção de microplásticos, sistemas de coleta eficientes e métodos inovadores de processamento a bordo. A embarcação é projetada para operar de forma autônoma, com alta eficiência energética, permitindo operações de longo prazo em áreas remotas.
+                </p>
+            </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section class="py-12 bg-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">
+            Benefícios do Projeto
+        </h2>
+        <div class="flex flex-wrap -mx-4">
+            <div class="w-full sm:w-1/2 lg:w-1/3 px-4 mb-6">
+            <div class="bg-gray-light shadow-md rounded p-6 h-full flex flex-col">
+                <h3 class="text-xl font-bold text-gray-800 mb-4">Preservação da Vida Marinha</h3>
+                <p class="text-gray-700">
+                A remoção de microplásticos dos oceanos ajuda a preservar a vida marinha, reduzindo os impactos negativos na saúde e nos habitats dos organismos aquáticos.
+                </p>
+            </div>
+            </div>
+
+            <div class="w-full sm:w-1/2 lg:w-1/3 px-4 mb-6">
+            <div class="bg-gray-light shadow-md rounded p-6 h-full flex flex-col">
+                <h3 class="text-xl font-bold text-gray-800 mb-4">Saúde dos Ecossistemas Costeiros</h3>
+                <p class="text-gray-700">
+                A coleta de microplásticos contribui para a saúde dos ecossistemas costeiros, beneficiando não apenas a vida marinha, mas também as comunidades que dependem desses ecossistemas.
+                </p>
+            </div>
+            </div>
+
+            <div class="w-full sm:w-1/2 lg:w-1/3 px-4 mb-6">
+            <div class="bg-gray-light shadow-md rounded p-6 h-full flex flex-col">
+                <h3 class="text-xl font-bold text-gray-800 mb-4">Inovação e Sustentabilidade</h3>
+                <p class="text-gray-700">
+                O projeto promove a inovação tecnológica e a sustentabilidade, desenvolvendo soluções que podem ser aplicadas globalmente para combater a poluição nos oceanos.
+                </p>
+            </div>
+            </div>
+        </div> 
+        </div>
+    </section>
+
+    <section class="bg-sky-800 py-16">
+        <div class="container mx-auto text-center px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-200 mb-4">
+            Explore nossos Dados e Relatórios
+        </h2>
+        <p class="text-lg sm:text-xl text-gray-200 mb-8">
+            Descubra como nossas ações estão ajudando a limpar os oceanos. Acesse os dados das missões e veja os resultados dos nossos esforços.
+        </p>
+        <a href="consulta.html" class="px-4 py-1 text-gray-200 font-semibold rounded-full border border-gray-200 hover:text-white hover:bg-gray-900 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-gray-700 focus:ring-offset-2">
+            Consultar Viagens
+        </a>
+        </div>
+    </section>
+
+    <footer id="footer" class="bg-gray-800 text-white p-4 text-center"></footer>
 </body>
 </html>

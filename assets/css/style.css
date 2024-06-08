@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400&display=swap');
+
+:root {
+  --color-blue-navy: #003366;
+  --color-blue-light: #66CCFF;
+  --color-green-water: #8ebdad;
+  --color-white: #FFFFFF;
+  --color-gray-light: #F0F0F0;
+  --color-blue-brand: #1E40AF;
+  --color-green-brand: #10B981;
+}
+
+.font-montserrat {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.font-opensans {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.bg-blue-navy {
+  background-color: var(--color-blue-navy);
+}
+
+.text-blue-navy {
+  color: var(--color-blue-navy);
+}
+
+.bg-blue-light {
+  background-color: var(--color-blue-light);
+}
+
+.text-blue-light {
+  color: var(--color-blue-light);
+}
+
+.bg-green-water {
+  background-color: var(--color-green-water);
+}
+
+.text-green-water {
+  color: var(--color-green-water);
+}
+
+.bg-gray-light {
+  background-color: var(--color-gray-light);
+}
+
+.text-gray-light {
+  color: var(--color-gray-light);
+}
+
+.bg-blue-brand {
+  background-color: var(--color-blue-brand);
+}
+
+.text-blue-brand {
+  color: var(--color-blue-brand);
+}
+
+.button-brand {
+  background-color: var(--color-blue-brand);
+  color: var(--color-white);
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  transition: background-color 0.3s;
+}
+
+.button-brand:hover {
+  background-color: #1c3a7a;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.swal2-popup {
+    font-size: 1.6rem !important;
+}
+.swal2-success .swal2-icon {
+    border-color: var(--color-green-water) !important; /* custom border color for success icon */
+}
+.swal2-success .swal2-icon::before, 
+.swal2-success .swal2-icon::after {
+    background: var(--color-green-water) !important; /* custom background color for success icon */
+}
+.swal2-warning .swal2-icon {
+    border-color: #5a1414 !important; /* custom border color for warning icon */
+}
+.swal2-warning .swal2-icon::before, 
+.swal2-warning .swal2-icon::after {
+    background: #f81111 !important; /* custom background color for warning icon */
+}
