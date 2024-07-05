@@ -3,6 +3,10 @@
 
 Este projeto consiste na criação de um programa para gerenciamento e controle das viagens de uma embarcação autônoma destinada à coleta de microplásticos nos oceanos. O objetivo é ajudar na preservação da biodiversidade marinha e na saúde dos ecossistemas costeiros.
 
+## Acesse a Página
+
+Você pode acessar a página através deste link: [Blue Future](https://isaacemerick.github.io/GS_APMD-Blue_Future)
+
 ## Integrantes do Grupo
 
 - Isaac Vieira Emerick RM: 87081
